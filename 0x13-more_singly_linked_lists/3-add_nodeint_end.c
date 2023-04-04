@@ -13,7 +13,7 @@ listint_t *new;
 listint_t *temp = *head;
 
 new = malloc(sizeof(listint_t));
-if (!new)
+if (new)
 return (NULL);
 
 new->n = n;
@@ -31,3 +31,4 @@ temp = temp->next;
 temp->next = new;
 
 return (new);
+}
